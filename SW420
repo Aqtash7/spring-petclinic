@@ -1,0 +1,12 @@
+int SW420 = 2; //attach SW420 to pin 2
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(SW420, INPUT);
+}
+
+void loop() {
+  int val = digitalRead(SW420); //read SW420 value
+  Serial.println(val);
+  delay(100); //wait for 100ms
+}
